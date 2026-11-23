@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Website pembelajaran Bahasa Arab untuk siswa SMK kelas X, XI, dan XII. Materi, kosakata, hiwar, latihan, evaluasi, dan kamus.">
+<title>Bahasa Arab SMK | Belajar, Praktik, Berkomunikasi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-icon">📖</span><span><b>Bahasa Arab SMK</b><small>Belajar • Praktik • Berkomunikasi</small></span></a>
+<nav><a href="#beranda">Beranda</a><a href="#materi">Materi</a><a href="#latihan">Latihan</a><a href="#kamus">Kamus</a><a href="#tentang">Tentang</a></nav>
+<div class="top-actions"><input id="globalSearch" placeholder="Cari materi atau kosakata..."><button class="menu-btn" id="menuBtn">☰</button></div></header>
+<main>
+<section class="hero" id="beranda"><img src="assets/hero-banner.jpg" alt="Ilustrasi pembelajaran Bahasa Arab untuk siswa SMK"><div class="hero-copy"><span class="eyebrow">PORTAL BELAJAR SISWA SMK</span><h1>Belajar Bahasa Arab<br><em>jadi lebih mudah!</em></h1><p>Mulai dari kosakata dasar, percakapan sehari-hari, sampai bahasa Arab untuk kompetensi keahlian dan dunia kerja.</p><a class="primary" href="#materi">Mulai Belajar <span>→</span></a></div></section>
+<section class="visual-strip"><figure><img src="assets/kelas-arab.jpg" alt="Ilustrasi kegiatan belajar Bahasa Arab di kelas"><figcaption>Belajar bersama di kelas</figcaption></figure><figure><img src="assets/siswa-belajar.jpg" alt="Ilustrasi siswa belajar mandiri"><figcaption>Belajar mandiri dan berlatih</figcaption></figure></section>
+<section class="quick-grid"><a href="#materi"><b>📚</b><span>12 Bab Materi</span></a><a href="#latihan"><b>✍️</b><span>Latihan Interaktif</span></a><a href="#kamus"><b>🔎</b><span>Kamus Arab–Indonesia</span></a><a href="#progres"><b>🏅</b><span>Progres Belajar</span></a></section>
+<section class="section" id="materi"><div class="section-head"><div><span class="eyebrow">JELAJAHI PEMBELAJARAN</span><h2>Materi berdasarkan kelas</h2><p>Pilih kelas, lalu buka bab yang ingin dipelajari.</p></div><div class="filters" id="gradeFilters"><button class="active" data-grade="Semua">Semua</button><button data-grade="X">Kelas X</button><button data-grade="XI">Kelas XI</button><button data-grade="XII">Kelas XII</button></div></div>
+<div class="content-layout"><aside class="side-panel"><h3>📘 Daftar Bab</h3><div id="chapterNav"></div></aside><div class="lesson-area"><div id="lessonDetail" class="lesson-detail"></div></div></div></section>
+<section class="section soft" id="latihan"><div class="section-head"><div><span class="eyebrow">UJI PEMAHAMAN</span><h2>Latihan interaktif</h2><p>Pilih jawaban yang paling tepat. Nilai muncul setelah diperiksa.</p></div></div><div class="quiz-card"><div class="quiz-top"><span>🧠 Kuis kosakata dasar</span><span id="quizCount">Soal 1 dari 5</span></div><h3 id="quizQuestion"></h3><div id="quizOptions" class="quiz-options"></div><div class="quiz-bottom"><span id="quizFeedback" aria-live="polite"></span><button id="nextQuiz" class="primary" disabled>Soal berikutnya →</button></div></div></section>
+<section class="section" id="kamus"><div class="section-head"><div><span class="eyebrow">CARI ARTI KATA</span><h2>Kamus mini Arab–Indonesia</h2><p>Ketik kata Arab, Latin, atau artinya dalam Bahasa Indonesia.</p></div></div><div class="dictionary"><input id="dictSearch" placeholder="Contoh: sekolah, kitabun, مَدْرَسَةٌ"><div id="dictResults" class="dict-results"></div></div></section>
+<section class="section soft" id="progres"><div class="progress-card"><div><span class="eyebrow">PERJALANAN BELAJARMU</span><h2>Terus tingkatkan kemampuan!</h2><p>Bab yang sudah kamu tandai selesai akan tersimpan di perangkat ini.</p></div><div class="progress-ring"><strong id="progressPercent">0%</strong><small>selesai</small></div><div class="progress-bar"><span id="progressBar"></span></div><p id="progressText">0 dari 12 bab selesai</p></div></section>
+<section class="section about" id="tentang"><div><span class="eyebrow">TENTANG PORTAL</span><h2>Bahasa Arab untuk kehidupan nyata</h2><p>Portal ini dirancang sebagai media belajar mandiri dan pendamping pembelajaran Bahasa Arab di SMK. Materi dikembangkan bertahap untuk kelas X, XI, dan XII dengan contoh yang dekat dengan aktivitas siswa, lingkungan sekolah, jurusan, dan dunia kerja.</p></div><div class="about-badge">🌱<b>Belajar sedikit<br>demi sedikit,<br>menjadi terbiasa.</b></div></section>
+</main><footer><b>Bahasa Arab SMK</b><span>Media pembelajaran • Kelas X, XI, XII</span><small>© 2026 • Materi dapat dikembangkan oleh guru sesuai kebutuhan sekolah.</small></footer>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body></html>
